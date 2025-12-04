@@ -1,46 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8">
-    <title>Archives · My Retro Log</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
-    <link rel="stylesheet" href="style.css">
+    <title>壊</title>
+    <link rel="icon" type="image/x-icon" href="/media/icon.webp">
+    <link href="/scenestyle.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      .image{
+        position:fixed;
+        width:540px;
+        height:540px;
+        background-image:url('/egpcu/break2.webp');
+        bottom:25%;
+        top:50%;
+        right:25%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        animation:6s cubic-bezier(.69,-0.57,.48,1.16) 1 change;
+      }
+      @keyframes change{
+        0% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        3% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        6% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        8% {opacity:0;}
+        10% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        13% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        16% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        18% {opacity:0;}
+        20% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        23% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        26% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        30% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        33% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        35% {opacity:0;}
+        36% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        38% {opacity:0;}
+        40% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        43% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        46% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        50% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        53% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        55% {opacity:0;}
+        56% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        60% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        63% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        65% {opacity:0;}
+        66% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        68% {opacity:0;}
+        70% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        73% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        76% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        78% {opacity:0;}
+        80% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        82% {opacity:0;}
+        83% {background-image:url('/egpcu/break1.webp');opacity:1;}
+        85% {opacity:0;}
+        86% {background-image:url('/egpcu/break2.webp');opacity:1;}
+        90% {background-image:url('/egpcu/break2.webp');opacity:1;}
+        92% {opacity:0;}
+        93% {background-image:url('/egpcu/break2.webp');opacity:1;}
+        96% {background-image:url('/egpcu/break2.webp');opacity:1;}
+        98% {opacity:0;}
+        100% {background-image:url('/egpcu/break2.webp');opacity:1;}
+      }
+      .blinker{
+        z-index:1;
+        position:fixed;
+        width:540px;
+        height:540px;
+        background-color:black;
+        opacity:0;
+        bottom:25%;
+        top:50%;
+        right:25%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        animation:6s linear infinite blink;
+        animation-delay:3.333s;
+      }
+      @keyframes blink{
+        0% {opacity:0;}
+        3% {opacity:0;}
+        6% {opacity:0;}
+        8% {opacity:1;}
+        10% {opacity:0;}
+        13% {opacity:0;}
+        16% {opacity:0;}
+        18% {opacity:1;}
+        20% {opacity:0;}
+        23% {opacity:0;}
+        26% {opacity:0;}
+        30% {opacity:0;}
+        33% {opacity:0;}
+        35% {opacity:1;}
+        36% {opacity:0;}
+        38% {opacity:1;}
+        40% {opacity:0;}
+        43% {opacity:0;}
+        46% {opacity:0;}
+        50% {opacity:0;}
+        53% {opacity:0;}
+        55% {opacity:1;}
+        56% {opacity:0;}
+        60% {opacity:0;}
+        63% {opacity:0;}
+        65% {opacity:1;}
+        66% {opacity:0;}
+        68% {opacity:1;}
+        70% {opacity:0;}
+        73% {opacity:0;}
+        76% {opacity:0;}
+        78% {opacity:1;}
+        80% {opacity:0;}
+        82% {opacity:1;}
+        83% {opacity:0;}
+        85% {opacity:1;}
+        86% {opacity:0;}
+        90% {opacity:0;}
+        92% {opacity:1;}
+        93% {opacity:0;}
+        96% {opacity:0;}
+        98% {opacity:1;}
+        100% {opacity:0;}
+      }
+    </style>
   </head>
-  <body>
-    <div class="scanlines"></div>
-
-    <div class="page-wrap">
-      <header class="site-header">
-        <div class="site-title">
-          <h1>MY RETRO LOG</h1>
-          <p class="tagline">small notes, big vibes</p>
-        </div>
-
-        <nav class="site-nav">
-          <a href="index.html" class="nav-link">HOME</a>
-          <a href="about.html" class="nav-link">ABOUT</a>
-          <a href="archives.html" class="nav-link active">ARCHIVES</a>
-        </nav>
-      </header>
-
-      <main class="site-main">
-        <section class="content-box">
-          <h2>ARCHIVES</h2>
-          <p>Older logs, grouped by year. Manually update this list when you add new posts.</p>
-
-          <h3>2025</h3>
-          <ul class="archive-list">
-            <li>[2025‑12‑05] Tiny update – <a href="index.html#post-2025-12-05">link</a></li>
-            <li>[2025‑12‑04] First boot – <a href="index.html#post-2025-12-04">link</a></li>
-          </ul>
-
-          <!-- Add more years + lists as you go -->
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <p>© 2025 MY RETRO LOG · archives</p>
-      </footer>
-    </div>
+  <body class="dark">
+    <div class="image"></div>
+    <div class="blinker"></div>
   </body>
 </html>
