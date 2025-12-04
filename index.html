@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Test Site</title>
+    <title>My Retro Log</title>
+
+    <!-- Pixel-style font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>Updates</h1>
-      <p>Welcome to my tiny corner of the web.</p>
-    </header>
+    <div class="scanlines"></div>
 
-    <main>
-      <article>
-        <h2>First Post</h2>
-        <p>This is my first update.</p>
-      </article>
-    </main>
+    <div class="page-wrap">
+      <header class="site-header">
+        <div class="site-title">
+          <h1>MY RETRO LOG</h1>
+          <p class="tagline">small notes, big vibes</p>
+        </div>
+
+        <nav class="site-nav">
+          <a href="index.html" class="nav-link active">HOME</a>
+          <a href="about.html" class="nav-link">ABOUT</a>
+          <a href="archives.html" class="nav-link">ARCHIVES</a>
+        </nav>
+      </header>
+
+      <main class="site-main">
+        <section class="intro-box">
+          <p>Welcome to my tiny corner of the net. Here I drop short updates about life and things I’m building.</p>
+        </section>
+
+        <section class="posts">
+          <article class="post">
+            <h2 class="post-title">[2025‑12‑04] First boot</h2>
+            <p class="post-meta">Status: online // Mood: curious</p>
+            <p class="post-body">
+              Spent today wiring this little retro site together. Expect random logs about coding, experiments,
+              and whatever else seems fun.
+            </p>
+          </article>
+
+          <article class="post">
+            <h2 class="post-title">[2025‑12‑05] Tiny update</h2>
+            <p class="post-meta">Status: tweaking CSS // Mood: caffeinated</p>
+            <p class="post-body">
+              Adjusted colors and layout, added a few test posts. Next up: maybe a projects section or screenshots.
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2025 MY RETRO LOG · running on pure HTML + CSS</p>
+      </footer>
+    </div>
   </body>
 </html>
